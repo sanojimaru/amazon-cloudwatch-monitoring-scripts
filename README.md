@@ -13,7 +13,7 @@ Then run the following command:
 
 Add this command to report to CloudWatch every five minutes:
 
-    */5 * * * * ~/amazon-cloudwatch-monitoring-scripts/send-reports-to-cloudwatch.sh 
+    */5 * * * * /bin/sh /path/to/amazon-cloudwatch-monitoring-scripts/send-reports-to-cloudwatch.sh 
 
 ## Reports
 
