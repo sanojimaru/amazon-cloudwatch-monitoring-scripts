@@ -7,7 +7,7 @@ MEM="--mem-util --mem-avail --mem-used --memory-units=megabytes"
 SWAP="--swap-util --swap-used "
 DISK="--disk-space-units=megabytes "
 
-MOUNT_POINTS=`df -T --exclude-type=tmpfs --exclude-type=devtmpfs | grep /dev/sd | sed -e "s/^.\+[ ]\+\(\/[^ ]*\)$/\1/g"`
+MOUNT_POINTS=`df -T --exclude-type=tmpfs --exclude-type=devtmpfs | grep /dev | sed -e "s/^.\+[ ]\+\(\/[^ ]*\)$/\1/g"`
 for PATH in $MOUNT_POINTS
 do
   DISK="--disk-path=${PATH} --disk-space-util --disk-space-used --disk-space-avail ${DISK}"
