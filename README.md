@@ -13,7 +13,10 @@ Then run the following command:
 
 Add this command to report to CloudWatch every five minutes:
 
-    */5 * * * * /bin/sh /path/to/amazon-cloudwatch-monitoring-scripts/send-reports-to-cloudwatch.sh 
+    AWS_ACCESS_KEY_ID="YOUR_AWS_ACCESS_KEY_ID"
+    AWS_SECRET_KEY="YOUR_AWS_SECRET_KEY"
+
+    */5 * * * * /bin/sh /path/to/amazon-cloudwatch-monitoring-scripts/send-reports-to-cloudwatch.sh
 
 ## Reports
 
