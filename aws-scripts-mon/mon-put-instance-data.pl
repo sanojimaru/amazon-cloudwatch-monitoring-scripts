@@ -368,6 +368,7 @@ if ($report_mem_util || $report_mem_used || $report_mem_avail || $report_swap_ut
   # meminfo values are in kilobytes
   my $mem_total = $meminfo{'MemTotal'} * KILO;
   my $mem_free = $meminfo{'MemFree'} * KILO;
+  
   my $mem_cached = $meminfo{'Cached'} * KILO;
   my $mem_buffers = $meminfo{'Buffers'} * KILO;
   my $mem_avail = $mem_free + $mem_cached + $mem_buffers;
